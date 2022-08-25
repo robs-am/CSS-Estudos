@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS Transition Time Functions</title>
+
+    <style>
+        .line {
+            width: 100%;
+            background-color: blue;
+            height: 25px;
+            margin-bottom: 10px;
+
+            transition: width;
+            transition-duration: 1s;
+        }
+
+
+        body:hover .line {
+            width: 20px;
+            background-color: rgb(142, 54, 243);
+        }
+
+        
+
+        .linear {
+            transition-timing-function: linear;
+        }
+
+        .ease {
+            transition-timing-function: ease;
+        }
+
+        .ease-in {
+            transition-timing-function: ease-in;
+        }
+
+        .ease-out {
+            transition-timing-function: ease-out;
+        }
+
+        .ease-in-out {
+            transition-timing-function: ease-in-out;
+        }
+        .cube {
+            transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="line linear" style="color:blanchedalmond">LINEAR</div><br><br>
+    <div class="line ease" style="color:blanchedalmond">EASE</div><br><br>
+    <div class="line ease-in" style="color:blanchedalmond">EASE-IN</div><br><br>
+    <div class="line ease-out" style="color:blanchedalmond">EASE-OUT</div><br><br>
+    <div class="line ease-in-out" style="color:blanchedalmond">EASE-IN-OUT</div><br><br>
+    <div class="line cube" style="color:blanchedalmond">EASE-IN-OUT</div>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Transition Property All</title>
+
+<style>
+
+body {
+    
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   height: 100vh;
+}
+
+.box-red {
+    width: 100px;
+    height: 100px;
+    border-radius : 100%;
+}
+.box-red {
+    background-color: rgb(0, 102, 255);
+    transition-property: all;
+    transition-duration: 1s;
+
+}
+.box-red:hover {
+    background-color: rgb(169, 128, 247);
+    transition-property: background-color, width, height;
+    transition-duration: 1s;
+    width: 400px;
+    height: 400px;
+}
+</style>
+</head>
+
+<body>
+<div class="box-red"></div>
+<div class="box-green"></div>
+</body>
+
+</html>
