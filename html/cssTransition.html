@@ -20,12 +20,17 @@ body {
     border-radius : 100%;
 }
 .box-red {
-    background-color: #f00;
+    background-color: rgb(0, 102, 255);
+    transition-property: background-color;
+    transition-duration: 1s;
+
 }
 .box-red:hover {
-    background-color: #ff0;
-    transition-property: background;
+    background-color: rgb(169, 128, 247);
+    transition-property: background-color, width, height;
     transition-duration: 1s;
+    width: 400px;
+    height: 400px;
 }
 </style>
 </head>
