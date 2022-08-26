@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Transition Property All</title>
+
+<style>
+
+body {
+    
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   height: 100vh;
+}
+
+.box-red,
+.box-green,
+.box-blue {
+    width: 100px;
+    height: 100px;
+    border-radius : 100%;
+}
+.box-red {
+    background-color:rgba(0, 102, 255, 0.679);
+    transition-property: all;
+    transition-duration: 1s;
+
+}
+.box-red:hover {
+    background-color: rgb(169, 128, 247);
+    transition-property: background-color, width, height;
+    transition-duration: 1s;
+    width: 400px;
+    height: 400px;
+    
+}
+.box-green {
+    background-color: rgba(39, 132, 39, 0.723);
+    transition: all 1s linear 200ms;
+}
+
+.box-green:hover {
+    transition: all 1s cubic-bezier(0.29, 1.01, 1, -0.68);
+    background-color:rgba(199, 21, 134, 0.655);
+    width: 300px;
+    height: 300px;
+    border-radius: 35px;
+}
+
+.box-blue {
+    background-color: rgba(117, 4, 166, 0.558);
+    transition: width  1s linear 1s;
+}
+
+.box-blue:hover {
+    transition: width 2s ease-in-out 0s;
+    width: 350px;
+}
+</style>
+</head>
+
+<body>
+<div class="box-red"></div>
+<div class="box-green"></div>
+<div class="box-blue"></div>
+<div class="box-yellow"></div>
+</body>
+
+</html>
