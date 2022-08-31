@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Timming Function</title>
+</head>
+
+<style>
+    div{
+        width: 100px;
+        height: 50px;
+        background-color: blueviolet;
+        
+        position: relative;
+
+        animation-name: example;
+        animation-duration: 2s;
+    }
+.linear{
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.ease {
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+.ease-in {
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+}
+.ease-out {
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+}
+.ease-in-out {
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+    @keyframes example {
+        from{
+            left: 0px
+        }
+        to{
+            left:calc(100% - 100px)
+
+        }
+    }
+</style>
+<body>
+    <div class="linear">linear</div>
+    <div class="ease">ease</div>
+    <div class="ease-in">ease-in</div>
+    <div class="ease-out">ease-out</div>
+    <div class="ease-in-out">ease-in-out</div>
+</body>
+</html>
